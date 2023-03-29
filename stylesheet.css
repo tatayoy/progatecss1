@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background-color: rgba(170, 214, 223, 0.9);
+  top: 0;
+  z-index: 10;
+  padding-top: 10px;
+  height: 80px;
+}
+
+.header-logo {
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-list li {
+  float: left;
+  color: #3b3737;
+  cursor: pointer;
+  display: flex;
+  padding: 20px;
+}
+
+.header-list li:hover{
+  background-color: rgb(185, 194, 241);
+  color: black;
+}
+
+/* content */
+.container{
+  text-align:center;
+  padding: 40px;
+  height: 550px;
+}
+
+h1{
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  font-size: 100px;
+}
+
+span{
+  color: indianred;
+}
+
+h2{
+  font-size: 50px;
+  opacity: 0.8;
+  color: grey;
+}
+
+.container1{
+  height: 220px;
+  width: 100%;
+  background-color: rgb(224, 221, 216);
+  text-align: center;
+  padding: 5px 5px 20px 5px;
+  color: rgb(100, 98, 98);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container2{
+  height: 300px;
+}
+
+h3{
+  padding: 20px 10px;
+  color: #3b3737;
+  text-align: center;
+}
+
+.gambar {
+  padding-right: 40px;
+  padding-left: 50px;
+  text-align: center;
+  display: flex;
+  flex: auto;
+}
+.gambar1,
+.gambar2,
+.gambar3 {
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 30px;
+  width: 30%;
+  color: #9ea7ac;
+}
+.contact-form {
+  padding-top: 25px;
+  text-align: center;
+  height:300px;
+  background-color: rgb(224, 221, 216);
+}
+
+input {
+  width:300px;
+  margin-bottom: 5px; 
+  padding:10px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+}
+textarea{
+  width:300px;
+  margin:10px;
+  padding:10px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+
+}
+
+.btn-kirim {
+  background-color: #ee9e36;
+  border-radius: 10%;
+  text-decoration-line: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: white;
+}
+
+.btn-kirim:hover{
+  color: black;
+}
+
+/* footer */
+.footer{
+  background-color: rgba(170, 214, 223, 0.9);
+  height: 130px;
+}
+
+.footer-logo{
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  float: left;
+  padding-top: 20px;
+}
+
+.footer-list {
+  padding: 20px 20px 0px 20px;
+  text-align: right;
+}
+
+.footer-list li {
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+.footer-list li:hover{
+  color: white;
+}
+
+@media(max-width: 735px) {
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  h2{
+    font-size: 25px;
+    opacity: 0.8;
+    color: grey;
+  }
+  img{
+    padding-top: 20px;
+  }
+  .container{
+    height: auto;
+  }
+}
+@media(max-width: 670px) {
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  h2{
+    font-size: 25px;
+    opacity: 0.8;
+    color: grey;
+  }
+  img{
+    padding-top: 20px;
+  }
+  .container{
+    height: auto;
+  }
+}
+
+@media(max-width: 645px) {
+  .header-list li {
+    display: none;
+  }
+}
+@media(max-width: 545px) {
+  .container1 p{
+    font-size: 2vw;
+  }
+  .container2{
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .gambar{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
